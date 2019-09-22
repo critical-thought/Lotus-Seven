@@ -1,0 +1,11 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: alpine:3.7
+    steps:
+      - run:
+          name: The Little Acorn
+          command: |
+            echo 'Hello World!'
+            echo 'This is a little acorn.'
